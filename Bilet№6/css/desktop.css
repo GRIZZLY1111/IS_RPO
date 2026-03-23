@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+}
+
+main{
+    padding: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f155;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr,);
+    gap: 25px;
+}
+
+.item_one{
+    grid-column: span 12;
+    grid-row: span 1;
+    background-color: red;
+}
+
+.item_two{
+    grid-column: span 5;
+    grid-row: span 4;
+    background-color: orange;
+}
+
+.item_three{
+    grid-column: span 3;
+    grid-row: span 4;
+    background-color: greenyellow;
+}
+
+.item_four{
+    grid-column: span 4;
+    grid-row: span 6;
+    background-color: chocolate;
+}
+
+.item_five{
+    grid-column: span 4;
+    grid-row: span 3;
+    background-color: coral;
+}
+
+.item_six{
+    grid-column: span 4;
+    grid-row: span 3;
+    background-color: darkgreen;
+}
+
+.item_seven{
+    grid-column: span 4;
+    grid-row: span 1;
+    background-color: black;
+}
