@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Кредитный калькулятор</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container_item">
+                <label for="sum">Сумма кредита</label>
+                <input type="text" id="sum">
+            </div>
+            <div class="container_item">
+                <label for="prc">Процентная ставка <span class="prc"></span></label>
+                <input type="range" name="" id="prc" min="2" max="18" step="0.1">
+            </div>
+            <div class="container_item">
+                <label for="year">Срок кредитв (лет) <span class="year"></span></label>
+                <input type="range" name="" id="year" min="1" max="15" step="1">
+            </div>
+            <button class="btn">Рассчитать</button>
+            <div class="container_item">
+                <label for="monthpay">Месячный платеж</label>
+                <input type="text" name="" id="monthpay" readonly>
+            </div>
+            <div class="container_item">
+                <label for="pay">Общая сумма выплат</label>
+                <input type="text" name="" id="pay" readonly>
+            </div>
+            <div class="container_item">
+                <label for="overpay">Переплата по кредиту</label>
+                <input type="text" name="" id="overpay" readonly>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
