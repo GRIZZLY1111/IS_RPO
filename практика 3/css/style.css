@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 100vh;
+    color:white
+}
+.frame{
+    width: 240px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: rgb(3, 3, 145);
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.onecheck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.dlina{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+}
+.dlina p{
+    margin-bottom: 0px;
+}
+button{
+    width: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(0, 0, 90);
+    border: 0px;
+}
+.password{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 90);
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    border-radius: 25px;
+}
+#range{
+    width: 250px;
+    appearance: none;
+    background-color:  rgb(0, 0, 90);
+    border-radius: 50px;
+}
+#range::-webkit-slider-thumb{
+    appearance: none;
+    background-color: chartreuse;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    margin-top: -5px;
+}
+#range::-webkit-slider-runnable-track{
+    appearance: none;
+    height: 10px;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 35px;
+}
+.slider{
+    position: absolute;
+    padding-left: 8px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: blueviolet;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    transition: 0.5s;
+}
+input[type="checkbox"]:checked +.slider{
+    background-color: brown;
+}
+input[type="checkbox"]:checked +.slider::before{
+    transform: translateX(100%);
+}
+.round{
+    border-radius: 14px;
+}
+.round::before{
+    border-radius: 50px;
+}

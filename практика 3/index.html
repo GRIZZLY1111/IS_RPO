@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="password"> 
+            <p class="text"></p>
+        </div>
+        <div class="dlina">
+            <p>Длина пароля</p>
+            <input type="range" name="range" id="range" min="4" max="16">
+        </div>
+        <div class="onecheck">
+            <div class="text">
+                <p>Использовать верхний регистр</p>
+            </div>
+            <div class="input">
+                <label for="upper" class="switch">
+                    <input type="checkbox" id="upper">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="onecheck">
+            <div class="text">
+                <p>Использовать нижний регистр</p>
+            </div>
+            <div class="input">
+                <label for="down" class="switch">
+                    <input type="checkbox" id="down">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="onecheck">
+            <div class="text">
+                <p>Использовать цифры</p>
+            </div>
+            <div class="input">
+                <label for="digital" class="switch">
+                    <input type="checkbox" id="digital">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="onecheck">
+            <div class="text">
+                <p>Использовать специальные символы</p>
+            </div>
+            <div class="input">
+                <label for="special" class="switch">
+                    <input type="checkbox" id="special">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="gen_btn" onclick="">Сгенерировать</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>    
+</body>
+</html>
