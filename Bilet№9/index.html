@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Генератор никнейма</title>
+</head>
+<body>
+    <main>
+        <div class="generate">
+            <input type="text" name="" id="result" readonly>
+            <input type="text" name="" id="lastname" placeholder="Фамилия">
+            <input type="text" name="" id="firstname" placeholder="Имя">
+            <select name="" id="hobby">
+                <option value="n" selected disabled>Хобби</option>
+                <option value="🥊">Спорт</option>
+                <option value="🎵">Музыка</option>
+                <option value="🎭">Искусство</option>
+                <option value="🛍">Шопинг</option>
+                <option value="🐒">Квадроберство</option>
+            </select>
+            <input type="number" name="" id="age" placeholder="Возраст" min="0" max="119">
+            <button class="btn">Сгенерировать</button>
+        </div>
+        
+        <div class="container">
+            <div class="box">
+                <p class="text"></p>
+            </div>
+            <div class="item">
+                <label for="">Длина</label>
+                <p class="number"></p>
+                <input type="range" name="" id="dlina" max="16" min="4" step="1">
+            </div>
+            <div class="item">
+                <label for="">Верхний регистр</label>
+                <input type="checkbox" name="up" id="up">
+            </div>
+            <div class="item">
+                <label for="">Нижний регистр</label>
+                <input type="checkbox" name="down" id="down">
+            </div>
+            <div class="item">
+                <label for="">Специальные символы</label>
+                <input type="checkbox" name="special" id="special">
+            </div>
+            <div class="item">
+                <label for="">Цифры</label>
+                <input type="checkbox" name="digital" id="digital">
+            </div>
+            <button class="button">
+                Создать пароль
+            </button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
